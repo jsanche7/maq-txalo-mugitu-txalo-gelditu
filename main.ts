@@ -8,11 +8,13 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (input.soundLevel() > 50) {
+    if (input.soundLevel() > 100) {
         if (egoera == 0) {
             egoera = 1
+            basic.pause(1000)
         } else {
             egoera = 0
+            basic.pause(1000)
         }
     }
 })
